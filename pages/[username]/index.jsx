@@ -394,6 +394,8 @@ function OptionsMenu({ canUpdate, isAuthenticatedUser, onNuke, setGlobalMessageO
           size="small"
           icon={KebabHorizontalIcon}
           aria-label="Editar usuário"
+          title="Editar usuário"
+          value="Editar usuário"
         />
       </ActionMenu.Anchor>
       <ActionMenu.Overlay>

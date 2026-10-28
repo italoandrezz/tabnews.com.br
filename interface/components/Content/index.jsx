@@ -126,7 +126,13 @@ function ViewModeOptionsMenu({ onDelete, onComponentModeChange }) {
         flickering after this menu appears, because without `position: absolute` it increases the row height */}
         <ActionMenu>
           <ActionMenu.Anchor>
-            <IconButton size="small" icon={KebabHorizontalIcon} aria-label="Editar conteúdo" />
+            <IconButton
+              size="small"
+              icon={KebabHorizontalIcon}
+              aria-label="Editar conteúdo"
+              title="Editar conteúdo"
+              value="Editar conteúdo"
+            />
           </ActionMenu.Anchor>
 
           <ActionMenu.Overlay>

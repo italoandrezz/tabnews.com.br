@@ -45,6 +45,8 @@ export default function useSearchBox() {
     return (
       <IconButton
         aria-label="Pesquisar"
+        title="Pesquisar"
+        value="Pesquisar"
         onClick={onClickSearchButton}
         variant="invisible"
         className={clsx(classes.SearchIconButton, className)}
@@ -116,7 +118,14 @@ export default function useSearchBox() {
         <div className={isLoading ? classes.ScrollAreaLoading : classes.ScrollArea}>
           <div className={classes.Header}>
             <Heading className={classes.Title}>Pesquisar com o Google</Heading>
-            <IconButton icon={XCircleFillIcon} variant="invisible" onClick={handleClose} />
+            <IconButton
+              icon={XCircleFillIcon}
+              aria-label="Fechar pesquisa"
+              title="Fechar pesquisa"
+              value="Fechar pesquisa"
+              variant="invisible"
+              onClick={handleClose}
+            />
           </div>
 
           <GoogleBox onInputRender={onInputRender} onSuggestionsRender={onSuggestionsRender} />

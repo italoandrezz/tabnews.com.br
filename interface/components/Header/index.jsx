@@ -125,6 +125,8 @@ export default function HeaderComponent() {
               <ActionMenu.Anchor>
                 <Button
                   aria-label="Abrir o menu"
+                  title="Abrir o menu"
+                  value="Abrir o menu"
                   variant="invisible"
                   className={classes.MenuButton}
                   style={{ background: 'transparent' }}>

@@ -24,6 +24,8 @@ export default function ThemeSelector({ onSelect, as: As = 'div', className, sx,
         fullWidth>
         <SegmentedControl.IconButton
           aria-label="Tema escuro"
+          title="Tema escuro"
+          value="Tema escuro"
           selected={['night', 'dark'].includes(colorMode)}
           icon={MoonIcon}
           size="small"
@@ -33,6 +35,8 @@ export default function ThemeSelector({ onSelect, as: As = 'div', className, sx,
         </SegmentedControl.Button>
         <SegmentedControl.IconButton
           aria-label="Tema claro"
+          title="Tema claro"
+          value="Tema claro"
           selected={['day', 'light'].includes(colorMode)}
           icon={SunIcon}
           size="small"
@@ -55,6 +59,8 @@ export function ThemeSwitcher({ ...props }) {
   return (
     <Button
       aria-label='Alternar tema entre "claro" e "escuro"'
+      title='Alternar tema entre "claro" e "escuro"'
+      value='Alternar tema entre "claro" e "escuro"'
       onClick={handleSwitchMode}
       variant="invisible"
       className={clsx(classes.Switcher, isLight ? classes.SwitcherLight : classes.SwitcherDark)}

@@ -104,6 +104,8 @@ function ActiveButtons({ content }) {
         <IconButton
           variant="invisible"
           aria-label="Creditar TabCoin"
+          title="Creditar TabCoin"
+          value="Creditar TabCoin"
           icon={ChevronUpIcon}
           size="small"
           className={classes.CreditButton}
@@ -123,6 +125,8 @@ function ActiveButtons({ content }) {
         <IconButton
           variant="invisible"
           aria-label="Debitar TabCoin"
+          title="Debitar TabCoin"
+          value="Debitar TabCoin"
           icon={ChevronDownIcon}
           size="small"
           className={classes.DebitButton}
